@@ -6,17 +6,17 @@
 
 # Inherit some common Lineage stuff.
 TARGET_DISABLE_EPPE := true
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/kenvyra/config/common_full_phone.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/google/bluejay/aosp_bluejay.mk)
-$(call inherit-product, device/google/gs101/lineage_common.mk)
-$(call inherit-product, device/google/bluejay/device-lineage.mk)
+$(call inherit-product, device/google/gs101/kenvyra_common.mk)
+$(call inherit-product, device/google/bluejay/device-kenvyra.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel 6a
-PRODUCT_NAME := lineage_bluejay
+PRODUCT_NAME := kenvyra_bluejay
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2400
